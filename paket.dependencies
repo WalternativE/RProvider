@@ -1,25 +1,25 @@
 source https://www.nuget.org/api/v2
 // framework: netstandard2.0
 
-nuget FsCheck 2.14.0 
-nuget FsCheck.Xunit 2.14.0 
+nuget FsCheck 2.14.3
+nuget FsCheck.Xunit 2.14.3
 nuget FSharp.Data 3.1.1 
 nuget FSharp.Formatting 3.1.0
-nuget R.NET 1.8.2
-nuget R.NET.FSharp 1.8.2
+nuget R.NET 1.9.0
+nuget R.NET.FSharp 1.9.0
 // nuget DynamicInterop 0.9.1 // should not be needed ?
 // nuget xunit.runners
 nuget xunit 2.4.1
 nuget xunit.runner.console 2.4.1
 nuget xunit.runner.visualstudio 2.4.1
-nuget FAKE 4.64.17
+nuget FAKE 5.16.0
 nuget NuGet.CommandLine 5.0.2
-nuget FSharp.Core 4.6.2
+nuget FSharp.Core 4.7.2
 
-github fsprojects/FSharp.TypeProviders.SDK:ddfb906ecbac78dc9f0f5e172518a72cb5fdf651 src/ProvidedTypes.fsi
-github fsprojects/FSharp.TypeProviders.SDK:ddfb906ecbac78dc9f0f5e172518a72cb5fdf651 src/ProvidedTypes.fs
+github fsprojects/FSharp.TypeProviders.SDK:2eb6d4f5da7a794dd6afd7fac3a4eb7401a5b01c src/ProvidedTypes.fsi
+github fsprojects/FSharp.TypeProviders.SDK:2eb6d4f5da7a794dd6afd7fac3a4eb7401a5b01c src/ProvidedTypes.fs
 
 group Release
   source https://www.nuget.org/api/v2
   // framework: netstandard2.0
-  nuget FSharp.Core 4.6.2
+  nuget FSharp.Core 4.7.2

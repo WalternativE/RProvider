@@ -1,7 +1,6 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{4F7B6E34-9782-4B13-BF92-CDE7C7F54B86}"
 	ProjectSection(SolutionItems) = preProject
@@ -32,11 +31,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{33FD
 	ProjectSection(SolutionItems) = preProject
 		docs\content\Charts-QuickStart.fsx = docs\content\Charts-QuickStart.fsx
 		docs\content\devnotes.md = docs\content\devnotes.md
-		docs\content\mac-and-linux.fsx = docs\content\mac-and-linux.fsx
-		docs\content\devnotes.md = docs\content\devnotes.md
 		docs\content\howto.md = docs\content\howto.md
 		docs\content\index.md = docs\content\index.md
 		docs\content\internals.md = docs\content\internals.md
+		docs\content\mac-and-linux.fsx = docs\content\mac-and-linux.fsx
 		docs\content\passing-data.fsx = docs\content\passing-data.fsx
 		docs\content\plugins.md = docs\content\plugins.md
 		docs\content\reading-rdata.fsx = docs\content\reading-rdata.fsx
@@ -45,15 +43,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{33FD
 		docs\content\whatwhy.md = docs\content\whatwhy.md
 	EndProjectSection
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RProvider", "src\RProvider\RProvider.fsproj", "{5624F098-BE3F-4C8E-B50F-1CFC9E1E0708}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RWrapperGenerator", "src\RWrapperGenerator\RWrapperGenerator.fsproj", "{66A390A5-526A-4BD1-B876-E7425B643C70}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RWrapperGenerator", "src\RWrapperGenerator\RWrapperGenerator.fsproj", "{66A390A5-526A-4BD1-B876-E7425B643C70}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RProvider.Server", "src\RProvider.Server\RProvider.Server.fsproj", "{7FF9CFA3-2516-4970-9DD8-54C7D4CA24AA}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RProvider.DesignTime", "src\RProvider.DesignTime\RProvider.DesignTime.fsproj", "{00496B70-99EA-4ED2-AFD5-6DB4A1DB7317}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RProvider.DesignTime", "src\RProvider.DesignTime\RProvider.DesignTime.fsproj", "{A10A99A7-9CE9-4D2D-8584-DB11BEEDDD84}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RProvider.Server", "src\RProvider\RProvider.Server.fsproj", "{7FF9CFA3-2516-4970-9DD8-54C7D4CA24AA}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RProvider", "src\RProvider\RProvider.fsproj", "{9D76FD1D-C75D-434A-A270-B20DC2EB63E5}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RProvider.Runtime", "src\RProvider\RProvider.Runtime.fsproj", "{80FD4284-C7BD-4170-8CC3-41E8548402E4}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RProvider.Runtime", "src\RProvider.Runtime\RProvider.Runtime.fsproj", "{E0A0D7D5-010B-47AF-9049-5209C5101268}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,26 +59,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5624F098-BE3F-4C8E-B50F-1CFC9E1E0708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5624F098-BE3F-4C8E-B50F-1CFC9E1E0708}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5624F098-BE3F-4C8E-B50F-1CFC9E1E0708}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5624F098-BE3F-4C8E-B50F-1CFC9E1E0708}.Release|Any CPU.Build.0 = Release|Any CPU
 		{66A390A5-526A-4BD1-B876-E7425B643C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{66A390A5-526A-4BD1-B876-E7425B643C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66A390A5-526A-4BD1-B876-E7425B643C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66A390A5-526A-4BD1-B876-E7425B643C70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{00496B70-99EA-4ED2-AFD5-6DB4A1DB7317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00496B70-99EA-4ED2-AFD5-6DB4A1DB7317}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00496B70-99EA-4ED2-AFD5-6DB4A1DB7317}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00496B70-99EA-4ED2-AFD5-6DB4A1DB7317}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7FF9CFA3-2516-4970-9DD8-54C7D4CA24AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7FF9CFA3-2516-4970-9DD8-54C7D4CA24AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FF9CFA3-2516-4970-9DD8-54C7D4CA24AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FF9CFA3-2516-4970-9DD8-54C7D4CA24AA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{80FD4284-C7BD-4170-8CC3-41E8548402E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80FD4284-C7BD-4170-8CC3-41E8548402E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80FD4284-C7BD-4170-8CC3-41E8548402E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{80FD4284-C7BD-4170-8CC3-41E8548402E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A10A99A7-9CE9-4D2D-8584-DB11BEEDDD84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10A99A7-9CE9-4D2D-8584-DB11BEEDDD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10A99A7-9CE9-4D2D-8584-DB11BEEDDD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10A99A7-9CE9-4D2D-8584-DB11BEEDDD84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D76FD1D-C75D-434A-A270-B20DC2EB63E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D76FD1D-C75D-434A-A270-B20DC2EB63E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D76FD1D-C75D-434A-A270-B20DC2EB63E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D76FD1D-C75D-434A-A270-B20DC2EB63E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A0D7D5-010B-47AF-9049-5209C5101268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A0D7D5-010B-47AF-9049-5209C5101268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A0D7D5-010B-47AF-9049-5209C5101268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A0D7D5-010B-47AF-9049-5209C5101268}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,5 +86,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9C22FF03-BB06-4332-8104-20AB4959BABA} = {B34F96AE-40C8-44AC-8D82-5196202C080E}
 		{33FDB386-BD2B-417C-B94D-7C2F11A3E2D0} = {B34F96AE-40C8-44AC-8D82-5196202C080E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0A152CA-C521-4DE0-A7B5-B80272FA09B9}
 	EndGlobalSection
 EndGlobal

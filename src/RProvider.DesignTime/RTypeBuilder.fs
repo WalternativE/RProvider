@@ -11,7 +11,7 @@ open Microsoft.FSharp.Core.CompilerServices
 open RProvider
 open RProvider.Internal
 open RInterop
-open RInteropInternal
+//open RInteropInternal
 open RInteropClient
 open Microsoft.Win32
 open System.IO

@@ -83,15 +83,19 @@ Target "CleanDocs" (fun _ ->
 // Build library & test project
 
 Target "Build" (fun _ ->
-    !! (projectName + ".sln")
-    |> MSBuildRelease "" "Rebuild"
-    |> Log "AppBuild-Output: "
+    DotNetCli.Build
+      (fun p -> 
+           { p with
+                Project = (projectName + ".sln")
+                Configuration = "Release" })
 )
 
 Target "BuildTests" (fun _ ->
-    !! (projectName + ".Tests.sln")
-    |> MSBuildRelease "" "Rebuild"
-    |> Log "AppBuild-Output: "
+    DotNetCli.Build
+      (fun p -> 
+           { p with
+                Project = (projectName + ".Tests.sln")
+                Configuration = "Release" })
 )
 
 // --------------------------------------------------------------------------------------

@@ -1,31 +1,13 @@
 @echo off
 
-if not exist .paket\paket.bootstrapper.exe goto pktbootnotfound
-.paket\paket.bootstrapper.exe
-if not errorlevel 0 goto pktbootfailed
+dotnet tool restore
 
-.paket\paket.exe restore
-if not errorlevel 0 goto pktrestorefailed
+dotnet paket restore
 
 packages\FAKE\tools\FAKE.exe %* --fsiargs -d:MONO build.fsx 
 if not errorlevel 0 goto fakefailed
 
 set exit_code=0
-goto leave
-
-:pktbootnotfound
-echo command not found: .paket\paket.bootstrapper.exe
-set exit_code=1
-goto leave
-
-:pktbootfailed
-echo command failed: .paket\paket.bootstrapper.exe
-set exit_code=1
-goto leave
-
-:pktrestorefailed
-echo command failed: .paket\paket.exe restore
-set exit_code=1
 goto leave
 
 :fakefailed
